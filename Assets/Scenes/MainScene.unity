@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -954,6 +954,7 @@ GameObject:
   - component: {fileID: 632806593}
   - component: {fileID: 632806588}
   - component: {fileID: 632806589}
+  - component: {fileID: 632806590}
   m_Layer: 0
   m_Name: kitten
   m_TagString: Player
@@ -994,6 +995,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1780985261}
+--- !u!95 &632806590
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 632806587}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 4eb44b4e031d28d4b831453ab1b7ed41, type: 3}
+  m_Controller: {fileID: 9100000, guid: 967408ddf3fe7e240b1a1f993cc3ad18, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &632806593
 Transform:
   m_ObjectHideFlags: 0

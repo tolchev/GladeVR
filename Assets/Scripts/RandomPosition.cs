@@ -13,7 +13,7 @@ public class RandomPosition : MonoBehaviour
         while (true)
         {
             SetRandomPosition();
-            yield return new WaitForSeconds(20);
+            yield return new WaitForSeconds(15);
         }
     }
 
