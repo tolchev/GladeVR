@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LookMoveTo : MonoBehaviour
 {
@@ -19,7 +17,6 @@ public class LookMoveTo : MonoBehaviour
             GameObject hitObject = hit.collider.gameObject;
             if (hitObject == ground)
             {
-                Debug.Log("Hit (x, y, z): " + hit.point.ToString("F2"));
                 transform.position = hit.point;
             }
         }
