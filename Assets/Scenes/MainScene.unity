@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4102705, g: 0.5160811, b: 0.61529833, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2501,6 +2501,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 205000011201749446, guid: 8fa35cdad352cfa4297d3be64705ecf1,
+        type: 2}
+      propertyPath: m_LODs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205000011201749446, guid: 8fa35cdad352cfa4297d3be64705ecf1,
+        type: 2}
+      propertyPath: m_LODs.Array.data[1].renderers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011667685464, guid: 8fa35cdad352cfa4297d3be64705ecf1, type: 2}
       propertyPath: m_LocalPosition.x
       value: 25.175167
@@ -2533,6 +2543,53 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4000011667685464, guid: 8fa35cdad352cfa4297d3be64705ecf1, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011667685464, guid: 8fa35cdad352cfa4297d3be64705ecf1, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011667685464, guid: 8fa35cdad352cfa4297d3be64705ecf1, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 205000011201749446, guid: 8fa35cdad352cfa4297d3be64705ecf1,
+        type: 2}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 205000011201749446, guid: 8fa35cdad352cfa4297d3be64705ecf1,
+        type: 2}
+      propertyPath: m_LODs.Array.data[1].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 1930238067}
+    - target: {fileID: 205000011201749446, guid: 8fa35cdad352cfa4297d3be64705ecf1,
+        type: 2}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.0026131268
+      objectReference: {fileID: 0}
+    - target: {fileID: 205000011201749446, guid: 8fa35cdad352cfa4297d3be64705ecf1,
+        type: 2}
+      propertyPath: m_LocalReferencePoint.x
+      value: 0.00030497462
+      objectReference: {fileID: 0}
+    - target: {fileID: 205000011201749446, guid: 8fa35cdad352cfa4297d3be64705ecf1,
+        type: 2}
+      propertyPath: m_LocalReferencePoint.y
+      value: 0.052837986
+      objectReference: {fileID: 0}
+    - target: {fileID: 205000011201749446, guid: 8fa35cdad352cfa4297d3be64705ecf1,
+        type: 2}
+      propertyPath: m_LocalReferencePoint.z
+      value: 0.000054053962
+      objectReference: {fileID: 0}
+    - target: {fileID: 205000011201749446, guid: 8fa35cdad352cfa4297d3be64705ecf1,
+        type: 2}
+      propertyPath: m_Size
+      value: 0.10557196
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8fa35cdad352cfa4297d3be64705ecf1, type: 2}
   m_IsPrefabParent: 0
@@ -2553,7 +2610,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerObject: {fileID: 961138853}
-  radius: 10
+  radius: 5
+--- !u!23 &1930238067 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 23000011664627356, guid: 8fa35cdad352cfa4297d3be64705ecf1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1930238064}
 --- !u!1 &1937074693
 GameObject:
   m_ObjectHideFlags: 0
