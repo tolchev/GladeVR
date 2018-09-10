@@ -650,6 +650,26 @@ Prefab:
 
         My reality is your reality!'
       objectReference: {fileID: 0}
+    - target: {fileID: 114179258783510620, guid: 5548ccd5a2971d44cac53b999ed3bc06,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179258783510620, guid: 5548ccd5a2971d44cac53b999ed3bc06,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179258783510620, guid: 5548ccd5a2971d44cac53b999ed3bc06,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179258783510620, guid: 5548ccd5a2971d44cac53b999ed3bc06,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.24313726
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5548ccd5a2971d44cac53b999ed3bc06, type: 2}
   m_IsPrefabAsset: 0
@@ -2914,6 +2934,23 @@ Transform:
   m_Father: {fileID: 106044610}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1911666929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1732373185415590, guid: 5548ccd5a2971d44cac53b999ed3bc06,
+    type: 2}
+  m_PrefabInternal: {fileID: 219632470}
+--- !u!114 &1911666930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1911666929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3385d91b8b8ac224f965ba0e97a9d2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 15
 --- !u!1001 &1930238064
 Prefab:
   m_ObjectHideFlags: 0
