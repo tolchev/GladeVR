@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KillTarget : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class KillTarget : MonoBehaviour
     public float timeToSelect = 3;
     // Счет.
     public int score;
+    public Text scoreText; 
 
     private float countDown;
 
@@ -21,6 +23,7 @@ public class KillTarget : MonoBehaviour
         score = 0;
         countDown = timeToSelect;
         hitEffect.enableEmission = false;
+        scoreText.text = "Score: 0";
     }
 
     void Update()
@@ -41,6 +44,7 @@ public class KillTarget : MonoBehaviour
                 StartCoroutine(StartKillEffect());
                 
                 score += 1;
+                scoreText.text = string.Format("Score: {0}", score.ToString());
                 countDown = timeToSelect;
                 target.SendMessage("Restart");
             }
