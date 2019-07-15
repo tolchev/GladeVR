@@ -3969,6 +3969,8 @@ GameObject:
   - component: {fileID: 1714612645}
   - component: {fileID: 1714612646}
   - component: {fileID: 1714612647}
+  - component: {fileID: 1714612650}
+  - component: {fileID: 1714612648}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -4028,6 +4030,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2384e60c40fa94041b365047d707e76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToSelect: 2
+--- !u!114 &1714612648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1714612643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1509ca8cf362f314090fdd18cba734a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1714612650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1714612643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21577a44386b14a45b10db4704819a12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFacingDown: 0
 --- !u!1 &1735341262
 GameObject:
   m_ObjectHideFlags: 0
