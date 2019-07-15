@@ -6,6 +6,9 @@ public class FlippinDashboard : MonoBehaviour
     GameObject dashboard;
     bool isOpen = true;
     Vector3 startRotation;
+    // Двух секундная задержка перед закрытием.
+    private float timer = 0;
+    private float timerReset = 2;
 
     #region MonoBehaviour
 
@@ -19,13 +22,21 @@ public class FlippinDashboard : MonoBehaviour
 	
     void Update () 
     {
-        if (gesture.isFacingDown)
+        if (gesture.isMovingDown)
         {
             OpenDashboard();
         }
+        else if (!gesture.isFacingDown)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                CloseDashboard();
+            }
+        }
         else
         {
-            CloseDashboard();
+            timer = timerReset;
         }
     }
 	
